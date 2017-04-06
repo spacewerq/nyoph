@@ -1,0 +1,17 @@
+
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+
+.select,
+.chosen-select,
+.chosen-select-width {
+  width: 100%;
+}
+
