@@ -1,111 +1,146 @@
+/*
+Error: Undefined variable: "$ltblue".
+        on line 35 of /Users/Brett/Sites/Clients/nyoph/nyoph_ingrogress/source/stylesheets/modstyles.css.scss
 
-// Modal Styles
-.md-modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 50%;
-  max-width: 630px;
-  min-width: 320px;
-  height: auto;
-  z-index: 2000;
-  visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
+30:   visibility: hidden;
+31:   top: 0;
+32:   left: 0;
+33:   z-index: 1000;
+34:   opacity: 0;
+35:   background: $ltblue;
+36:   -webkit-transition: all 0.3s;
+37:   -moz-transition: all 0.3s;
+38:   transition: all 0.3s;
+39: }
+40: 
 
-.md-show {
-  visibility: visible;
-}
-
-.md-overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  visibility: hidden;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  opacity: 0;
-  background: $ltblue;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.md-show ~ .md-overlay {
-  opacity: 0.8;
-  visibility: visible;
-}
-
-/* Content styles */
-.md-content {
-  color: #fff;
-  background: #e74c3c;
-  position: relative;
-  border-radius: 3px;
-  margin: 0 auto;
-}
-
-.md-content h3 {
-  margin: 0;
-  padding: 0.4em;
-  text-align: center;
-  font-size: 2.4em;
-  font-weight: 300;
-  opacity: 0.8;
-  background: rgba(0,0,0,0.1);
-  border-radius: 3px 3px 0 0;
-}
-
-.md-content > div {
-  padding: 15px 40px 30px;
-  margin: 0;
-  font-weight: 300;
-  font-size: 1.15em;
-}
-
-.md-content > div p {
-  margin: 0;
-  padding: 10px 0;
-}
-
-.md-content > div ul {
-  margin: 0;
-  padding: 0 0 30px 20px;
-}
-
-.md-content > div ul li {
-  padding: 5px 0;
-}
-
-.md-content button {
-  display: block;
-  margin: 0 auto;
-  font-size: 0.8em;
-}
-
-.md-effect-3 .md-content {
-  -webkit-transform: translateY(20%);
-  -moz-transform: translateY(20%);
-  -ms-transform: translateY(20%);
-  transform: translateY(20%);
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.md-show.md-effect-3 .md-content {
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
-  opacity: 1;
-}
-
+Backtrace:
+/Users/Brett/Sites/Clients/nyoph/nyoph_ingrogress/source/stylesheets/modstyles.css.scss:35
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/tree/root_node.rb:20:in `render'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-core-4.2.1/lib/middleman-core/renderers/sass.rb:68:in `evaluate'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/tilt-2.0.7/lib/tilt/template.rb:109:in `render'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-core-4.2.1/lib/middleman-core/file_renderer.rb:79:in `render'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-core-4.2.1/lib/middleman-core/template_renderer.rb:184:in `_render_with_all_renderers'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-core-4.2.1/lib/middleman-core/template_renderer.rb:147:in `block in render'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/activesupport-5.0.2/lib/active_support/notifications.rb:166:in `instrument'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-core-4.2.1/lib/middleman-core/util.rb:21:in `instrument'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-core-4.2.1/lib/middleman-core/template_renderer.rb:146:in `render'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-core-4.2.1/lib/middleman-core/sitemap/resource.rb:154:in `render'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-core-4.2.1/lib/middleman-core/rack.rb:112:in `process_request'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-core-4.2.1/lib/middleman-core/rack.rb:66:in `block in call'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-core-4.2.1/lib/middleman-core/rack.rb:65:in `catch'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-core-4.2.1/lib/middleman-core/rack.rb:65:in `call'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/rack-2.0.1/lib/rack/urlmap.rb:68:in `block in call'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/rack-2.0.1/lib/rack/urlmap.rb:53:in `each'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/rack-2.0.1/lib/rack/urlmap.rb:53:in `call'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/rack-2.0.1/lib/rack/head.rb:12:in `call'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/rack-2.0.1/lib/rack/lint.rb:49:in `_call'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/rack-2.0.1/lib/rack/lint.rb:37:in `call'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/rack-2.0.1/lib/rack/builder.rb:153:in `call'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/rack-2.0.1/lib/rack/mock.rb:74:in `request'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/rack-2.0.1/lib/rack/mock.rb:56:in `get'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:232:in `block in output_resource'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/activesupport-5.0.2/lib/active_support/notifications.rb:166:in `instrument'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-core-4.2.1/lib/middleman-core/util.rb:21:in `instrument'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:225:in `output_resource'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/parallel-1.11.1/lib/parallel.rb:482:in `call_with_index'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/parallel-1.11.1/lib/parallel.rb:453:in `process_incoming_jobs'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/parallel-1.11.1/lib/parallel.rb:435:in `block in worker'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/parallel-1.11.1/lib/parallel.rb:426:in `fork'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/parallel-1.11.1/lib/parallel.rb:426:in `worker'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/parallel-1.11.1/lib/parallel.rb:417:in `block in create_workers'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/parallel-1.11.1/lib/parallel.rb:416:in `each'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/parallel-1.11.1/lib/parallel.rb:416:in `each_with_index'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/parallel-1.11.1/lib/parallel.rb:416:in `create_workers'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/parallel-1.11.1/lib/parallel.rb:358:in `work_in_processes'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/parallel-1.11.1/lib/parallel.rb:264:in `map'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:137:in `output_resources'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:97:in `block in prerender_css'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/activesupport-5.0.2/lib/active_support/notifications.rb:166:in `instrument'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-core-4.2.1/lib/middleman-core/util.rb:21:in `instrument'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:95:in `prerender_css'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:65:in `block in run!'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/activesupport-5.0.2/lib/active_support/notifications.rb:166:in `instrument'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-core-4.2.1/lib/middleman-core/util.rb:21:in `instrument'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:64:in `run!'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-cli-4.2.1/lib/middleman-cli/build.rb:80:in `block in build'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/activesupport-5.0.2/lib/active_support/notifications.rb:166:in `instrument'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-core-4.2.1/lib/middleman-core/util.rb:21:in `instrument'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-cli-4.2.1/lib/middleman-cli/build.rb:79:in `build'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/thor-0.19.4/lib/thor/command.rb:27:in `run'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/thor-0.19.4/lib/thor/invocation.rb:126:in `invoke_command'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/thor-0.19.4/lib/thor/invocation.rb:133:in `block in invoke_all'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/thor-0.19.4/lib/thor/invocation.rb:133:in `each'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/thor-0.19.4/lib/thor/invocation.rb:133:in `map'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/thor-0.19.4/lib/thor/invocation.rb:133:in `invoke_all'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/thor-0.19.4/lib/thor/group.rb:232:in `dispatch'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/thor-0.19.4/lib/thor/invocation.rb:115:in `invoke'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/thor-0.19.4/lib/thor.rb:40:in `block in register'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/thor-0.19.4/lib/thor/command.rb:27:in `run'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/thor-0.19.4/lib/thor/invocation.rb:126:in `invoke_command'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/thor-0.19.4/lib/thor.rb:369:in `dispatch'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/thor-0.19.4/lib/thor/base.rb:444:in `start'
+/Users/Brett/.rvm/gems/ruby-2.3.1@middleman/gems/middleman-cli-4.2.1/bin/middleman:70:in `<top (required)>'
+/Users/brett/.rvm/gems/ruby-2.3.1@middleman/bin/middleman:23:in `load'
+/Users/brett/.rvm/gems/ruby-2.3.1@middleman/bin/middleman:23:in `<main>'
+/Users/brett/.rvm/gems/ruby-2.3.1@middleman/bin/ruby_executable_hooks:15:in `eval'
+/Users/brett/.rvm/gems/ruby-2.3.1@middleman/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$ltblue\".\A         on line 35 of /Users/Brett/Sites/Clients/nyoph/nyoph_ingrogress/source/stylesheets/modstyles.css.scss\A \A 30:   visibility: hidden;\A 31:   top: 0;\A 32:   left: 0;\A 33:   z-index: 1000;\A 34:   opacity: 0;\A 35:   background: $ltblue;\A 36:   -webkit-transition: all 0.3s;\A 37:   -moz-transition: all 0.3s;\A 38:   transition: all 0.3s;\A 39: }\A 40: "; }
