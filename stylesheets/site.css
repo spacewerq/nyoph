@@ -32,6 +32,8 @@ p {
   padding: 0; }
   p.subtext {
     font-size: 0.875rem; }
+    p.subtext .test {
+      display: none; }
 
 button, .bttn {
   margin-top: 1em; }
@@ -254,7 +256,7 @@ footer {
 .locations {
   margin-top: 2em; }
 
-.serivces {
+.benefits {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -270,7 +272,7 @@ footer {
   -ms-flex-flow: wrap;
   -o-flex-flow: wrap;
   flex-flow: wrap; }
-  .serivces ul:nth-of-type(1) {
+  .benefits ul:nth-of-type(1) {
     padding-right: 2rem; }
 
 .md-modal {
@@ -434,6 +436,10 @@ footer {
         margin-right: 0; }
     .flex .col_70 {
       width: 60%; }
+    .flex .col_50 {
+      width: 50%; }
+    .flex .col_40 {
+      width: 40%; }
     .flex .col_30 {
       width: 28%; }
 
@@ -491,20 +497,28 @@ footer {
     -o-flex-grow: 1;
     flex-grow: 1; }
 
+  p.subtext .test {
+    display: block; }
+
   .md-content h3 {
     font-size: 2.375rem; }
 
   .md-content > div p {
     font-size: 1rem; }
 
-  .serivces {
+  .benefits {
     -webkit-flex-direction: row;
     -moz-flex-direction: row;
     -ms-flex-direction: row;
     -o-flex-direction: row;
     flex-direction: row; }
-    .serivces ul {
-      width: 100%; } }
+    .benefits ul {
+      width: 100%;
+      padding-left: 45%; }
+      .benefits ul.services {
+        background: url("../images/icon_services.png") 0 0 no-repeat; }
+      .benefits ul.offices {
+        background: url("../images/icon_offices.png") 0 0 no-repeat; } }
 @media screen\0 {
   .ieHide {
     display: none; }
