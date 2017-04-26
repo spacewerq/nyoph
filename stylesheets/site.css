@@ -128,6 +128,12 @@ footer {
   padding: 60px 20px;
   max-width: 980px; }
 
+.main {
+  text-align: center; }
+  .main img {
+    width: 800px;
+    max-width: 100%; }
+
 .header {
   display: -webkit-flex;
   display: -moz-flex;
