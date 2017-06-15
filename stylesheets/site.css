@@ -35,6 +35,12 @@ p {
     p.subtext .test {
       display: none; }
 
+.logo_main {
+  display: none; }
+
+.logo_mini {
+  display: block; }
+
 button, .bttn {
   margin-top: 1em; }
 
@@ -388,6 +394,12 @@ footer {
     .serivces ul {
       width: 44%; } }
 @media only screen and (min-width: 680px) {
+  .logo_main {
+    display: block; }
+
+  .logo_mini {
+    display: none; }
+
   body {
     background: #59B5E2; }
 
